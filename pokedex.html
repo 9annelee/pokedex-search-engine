@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokedex.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Pokedex</title>
+    <link rel="icon" href="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Photo.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://images.unsplash.com/photo-1636611452107-5a04c23b48e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <span class="card-header-title title is-2 is-centered">
+                            <span>
+                                <figure class="image is-64x64">
+                                    <img src="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Photo.png"> 
+                                </figure>
+                            </span>
+                            Pokedex
+                        </span>
+                        <!-- <span>
+                            <figure class="image is-64x64">
+                                <img src="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Photo.png"> 
+                            </figure>
+                        </span> -->
+                      <!-- <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button> -->
+                    </header>
+                    <form id="searchForm">
+                        <div class="card-content">
+                            <div class="content">
+                                <p>Welcome! You have found a local Pokedex, search any Pokemon, and get information immediately!</p>
+                                <div class="columns">
+                                    <div class="column is-full">
+                                        <input type="text" placeholder="Pokemon Name" name="query" class="input is-danger">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column is-one-third is-offset-one-third">
+                                    <button class="button is-danger is-fullwidth is-rounded card-foot-item">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            
+                        </footer>
+                    </form>
+                  </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div id="info" class="column is-half is-offset-one-quarter">
+                <!-- <div class="card">
+                    <div class="column is-full">
+        
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="pokedex.js"></script>
+</body>
+</html>
